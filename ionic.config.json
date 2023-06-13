@@ -1,0 +1,7 @@
+{
+  "name": "patch-package-test",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
