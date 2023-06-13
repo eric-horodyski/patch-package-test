@@ -1,0 +1,20 @@
+diff --git a/node_modules/cordova-plugin-inappbrowser/.DS_Store b/node_modules/cordova-plugin-inappbrowser/.DS_Store
+new file mode 100644
+index 0000000..2ceb823
+Binary files /dev/null and b/node_modules/cordova-plugin-inappbrowser/.DS_Store differ
+diff --git a/node_modules/cordova-plugin-inappbrowser/src/.DS_Store b/node_modules/cordova-plugin-inappbrowser/src/.DS_Store
+new file mode 100644
+index 0000000..7083c2c
+Binary files /dev/null and b/node_modules/cordova-plugin-inappbrowser/src/.DS_Store differ
+diff --git a/node_modules/cordova-plugin-inappbrowser/src/ios/CDVWKInAppBrowser.m b/node_modules/cordova-plugin-inappbrowser/src/ios/CDVWKInAppBrowser.m
+index cf4b6f6..08d8c41 100644
+--- a/node_modules/cordova-plugin-inappbrowser/src/ios/CDVWKInAppBrowser.m
++++ b/node_modules/cordova-plugin-inappbrowser/src/ios/CDVWKInAppBrowser.m
+@@ -291,6 +291,7 @@ - (void)show:(CDVInvokedUrlCommand*)command withNoAnimate:(BOOL)noAnimate
+                                                         initWithRootViewController:self.inAppBrowserViewController];
+     nav.orientationDelegate = self.inAppBrowserViewController;
+     nav.navigationBarHidden = YES;
++    // Shhhh! I snuck in a comment.
+     nav.modalPresentationStyle = self.inAppBrowserViewController.modalPresentationStyle;
+     nav.presentationController.delegate = self.inAppBrowserViewController;
+     
